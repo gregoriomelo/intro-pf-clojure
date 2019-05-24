@@ -104,4 +104,34 @@ música; // "Quem espera que a vida seja feita de ilusão pode até ficar maluco
 
 ---
 
+### Pré-Java 8
 
+```
+List<String> resumos = new ArrayList<>();
+
+for (Filme filme : filmes) {
+    resumos.add(encurtar(filme.getResumo()));
+}
+
+return resumos;
+```
+
+---
+
+### Pós-Java 8
+
+```
+return filmes
+    .stream()
+    .map(Filme::getResumo)
+    .map(Representacao::encurtar)
+    .collect(Collectors.toList());
+```
+
+---
+
+### Clojure
+
+```
+(map #(encurtar (:resumo %)) filmes)
+```
