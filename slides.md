@@ -95,3 +95,13 @@ resumir(música); // "Quem espera que a vi..."
 
 música; // "Quem espera que a vida seja feita de ilusão pode até ficar maluco ou morrer na solidão"
 ```
+
+---
+
+## Estudo de caso
+
+### Encurtar uma lista de resumos de filmes
+
+---
+
+
