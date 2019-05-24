@@ -8,7 +8,7 @@ revealOptions:
 
 ## Uma introdução com Clojure
 
-_Gregório Melo_
+_Gregório Melo_ @ ThoughtWorks
 
 ---
 
@@ -135,3 +135,45 @@ return filmes
 ```
 (map #(encurtar (:resumo %)) filmes)
 ```
+
+---
+
+## O que é Clojure?
+
+- Lisp <!-- .element: class="fragment" data-fragment-index="1" -->
+- JVM <!-- .element: class="fragment" data-fragment-index="2" -->
+
+---
+
+## Exemplos de Clojure
+
+---
+
+## Por que aprender?
+
+- Lisp <!-- .element: class="fragment" data-fragment-index="1" -->
+
+---
+
+## Como aprender?
+
+- Meu livro <!-- .element: class="fragment" data-fragment-index="1" -->
+- Living Clojure <!-- .element: class="fragment" data-fragment-index="2" -->
+- Joy of Clojure <!-- .element: class="fragment" data-fragment-index="3" -->
+- Functional Thinking <!-- .element: class="fragment" data-fragment-index="4" -->
+
+---
+
+## Outras linguagens (JVM)
+
+- Scala
+- Kotlin
+- Groovy
+
+---
+
+## Outras linguagens (fora da JVM)
+
+- ECMAScript
+- ReasonML (ou elm)
+- TypeScript
