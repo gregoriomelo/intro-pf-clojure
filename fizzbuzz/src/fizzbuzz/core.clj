@@ -1,4 +1,4 @@
 (ns fizzbuzz.core)
 
-(defn oi []
-  "Oi!")
+(defn fizzbuzz [numero]
+  numero)
