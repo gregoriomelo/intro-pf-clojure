@@ -180,6 +180,14 @@ return filmes
 
 ## Outras linguagens (fora da JVM)
 
-- ECMAScript
-- ReasonML (ou elm)
+- F#
+- Elixir
+- Haskell
+
+---
+
+## Outras linguagens (no front)
+
+- ReasonML
+- elm
 - TypeScript
