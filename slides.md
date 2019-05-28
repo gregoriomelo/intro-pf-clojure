@@ -12,6 +12,12 @@ _Gregório Melo_ @ ThoughtWorks
 
 ---
 
+### Sobre mim
+
+<img alt="Log do podcast Tecnologicamente Arretado" src="./img/podcast.png" />
+
+---
+
 ### Por que falar de Clojure?
 
 <img alt="Capa do livro Programação Funcional: Uma introdução em Clojure" src="./img/livro.jpg" width="40%" />
