@@ -151,13 +151,84 @@ return filmes
 
 ---
 
-## Exemplos de Clojure
+## Ao vivo
 
 ---
 
 ## Por que aprender?
 
-- Lisp <!-- .element: class="fragment" data-fragment-index="1" -->
+---
+
+## Por que aprender?
+
+### Aprimorar código OO <!-- .element: class="fragment" data-fragment-index="0" -->
+
+#### Código mais robusto <!-- .element: class="fragment" data-fragment-index="1" -->
+#### Novas ideias para resolver problemas <!-- .element: class="fragment" data-fragment-index="2" -->
+
+---
+
+## Por exemplo, _type alias_
+
+---
+
+## Por que aprender?
+
+```java
+public Reserva buscar(String localizador,
+                      String codigoAeroporto) { ... }
+```
+
+---
+
+## Por que aprender?
+
+```java
+public Reserva buscar(String localizador,
+                      String codigoAeroporto) { ... }
+
+buscar("CGH", "L0C4LI");
+```
+
+---
+
+## Por que aprender?
+
+```java
+public Reserva buscar(Localizador localizador,
+                      CodigoAeroporto codigoAeroporto) { ... }
+
+buscar(localizador, codigoAeroporto);
+```
+
+---
+
+## Por que aprender?
+
+```java
+public Reserva buscar(CPF cpf,
+                      CodigoAeroporto codigoAeroporto) { ... }
+
+buscar(cpf, codigoAeroporto);
+```
+
+---
+
+## Por que aprender?
+
+### Arquitetura robusta e escalável <!-- .element: class="fragment" data-fragment-index="0" -->
+
+#### Segregação das mudanças de estado <!-- .element: class="fragment" data-fragment-index="1" -->
+#### Métodos e classes bem isoladas <!-- .element: class="fragment" data-fragment-index="2" -->
+
+---
+
+## Por que aprender?
+
+### Arquitetura robusta e escalável
+
+#### Event sourcing & CQRS
+#### DDD & arquitetura hexagonal
 
 ---
 
@@ -167,6 +238,7 @@ return filmes
 - Living Clojure <!-- .element: class="fragment" data-fragment-index="2" -->
 - Joy of Clojure <!-- .element: class="fragment" data-fragment-index="3" -->
 - Functional Thinking <!-- .element: class="fragment" data-fragment-index="4" -->
+- Java 8 Prático <!-- .element: class="fragment" data-fragment-index="5" -->
 
 ---
 
