@@ -6,7 +6,7 @@ revealOptions:
 ---
 # Programação Funcional
 
-## Uma introdução em Clojure
+## Uma introdução
 
 _Gregório Melo_ @ ThoughtWorks
 
@@ -45,6 +45,8 @@ _Gregório Melo_ @ ThoughtWorks
 
 ### Funções como cidadãs de primeira classe
 
+#### Referências a funções
+
 ```javascript
 const nome = "Gregório Melo";
 const quantasVezes = 2;
@@ -57,7 +59,27 @@ hackeragem(nome, 2);
 
 ---
 
-### Estruturas de dados imutáveis (JavaScript)
+### Funções como cidadãs de primeira classe
+
+#### Funções como argumentos
+
+```javascript
+const comoCebolinha = (texto) => texto.replace(/r/g, "l");
+const comComemoracao = (texto) => texto.concat("\nVai, Corinthians!");
+
+const transformarTexto = (texto, estrategia) => estrategia(texto);
+
+transformarTexto("Programação funcional", comoCebolinha);
+// "Ploglamação funcional"
+
+transformarTexto("Programação funcional", comComemoracao);
+// "Programação funcional
+// Vai, Corinthians!"
+```
+
+---
+
+### Estruturas de dados mutáveis (JavaScript)
 
 ```javascript
 const escalação = ["Cássio", "Fágner", "Manoel", "Henrique"];
@@ -72,7 +94,7 @@ escalação
 
 ---
 
-### Estruturas de dados imutáveis (Java)
+### Estruturas de dados mutáveis (Java)
 
 ```java
 List<String> escalação = new ArrayList<>();
@@ -83,6 +105,30 @@ escalação.add("Manoel");
 escalação.add("Henrique");
 
 System.out.println(escalação.size());
+// 4
+```
+
+---
+
+### Estruturas de dados imutáveis (Java)
+
+```java
+
+```
+
+---
+
+### Estruturas de dados imutáveis (Clojure)
+
+```clojure
+```
+
+---
+
+### Funções puras
+
+```java
+
 ```
 
 ---
