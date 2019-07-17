@@ -14,6 +14,10 @@ _Gregório Melo_ @ ThoughtWorks
 
 ### Sobre mim
 
+---
+
+### tecnologicamentearretado.com.br
+
 <img alt="Log do podcast Tecnologicamente Arretado" src="./img/podcast.png" />
 
 ---
