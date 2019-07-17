@@ -45,6 +45,10 @@ _Gregório Melo_ @ ThoughtWorks
 
 ### Funções como cidadãs de primeira classe
 
+---
+
+### Funções como cidadãs de primeira classe
+
 #### Referências a funções
 
 ```javascript
@@ -79,7 +83,11 @@ transformarTexto("Programação funcional", comComemoracao);
 
 ---
 
-### Estruturas de dados mutáveis (JavaScript)
+### Estruturas de dados imutáveis
+
+---
+
+### Estruturas de dados imutáveis (JavaScript)
 
 ```javascript
 const escalação = ["Cássio", "Fágner", "Manoel", "Henrique"];
@@ -110,10 +118,16 @@ System.out.println(escalação.size());
 
 ---
 
-### Estruturas de dados imutáveis (Java)
+### Estruturas de dados _imutáveis_ (Java)
 
 ```java
+List<Filme> filmes = of(
+  new Filmes("Auto da Compadecida"),
+  new Filmes("Lisbela e o prisioneiro")
+);
 
+filmes.add("Titanic");
+// lasqueira
 ```
 
 ---
@@ -121,19 +135,30 @@ System.out.println(escalação.size());
 ### Estruturas de dados imutáveis (Clojure)
 
 ```clojure
+(def geodude {:nome "Geodude" :tipo "Rocha"})
+(def snorlax {:nome "Snorlax" :tipo "Normal"})
+
+(def pokémons-favoritos (list geodude snorlax))
+
+(def mime {:nome "Mr. Mime" :tipo "Psíquico"})
+
+(cons mime pokémons-favoritos)
+;; ({:nome "Mr. Mime", :tipo "Psíquico"}
+;;  {:nome "Geodude", :tipo "Rocha"}
+;;  {:nome "Snorlax", :tipo "Normal"})
+
+pokémons-favoritos
+;; ({:nome "Geodude", :tipo "Rocha"}
+;;  {:nome "Snorlax", :tipo "Normal"})
 ```
 
 ---
 
 ### Funções puras
 
-```java
-
-```
-
 ---
 
-### Funções puras
+### Funções puras (JavaScript)
 
 ```javascript
 const música = "Quem espera que a vida seja feita de" +
@@ -150,6 +175,26 @@ const resumir = (texto) => {
 resumir(música); // "Quem espera que a vi..."
 
 música; // "Quem espera que a vida seja feita de ilusão pode até ficar maluco ou morrer na solidão"
+```
+
+---
+
+### Funções puras (Clojure)
+
+```clojure
+(def musica "Quem espera que a vida seja feita de ilusão pode até ficar maluco ou morrer na solidão")
+
+(defn encurtar [resumo]
+  (if (> (.length resumo) 20) (-> resumo
+                                  (.substring 0 18)
+                                  (str "..."))
+      resumo))
+
+(encurtar musica)
+;; "Quem espera que a ..."
+
+musica
+;; "Quem espera que a vida seja feita de ilusão pode até ficar maluco ou morrer na solidão"
 ```
 
 ---
