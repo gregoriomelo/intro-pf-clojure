@@ -4,9 +4,9 @@ theme: solarized
 revealOptions:
     transition: 'fade'
 ---
-# Programação Funcional na JVM
+# Programação Funcional
 
-## Uma introdução com Clojure
+## Uma introdução em Clojure
 
 _Gregório Melo_ @ ThoughtWorks
 
